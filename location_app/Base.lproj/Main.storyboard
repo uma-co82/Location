@@ -132,10 +132,12 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="compass" destination="5NC-ar-3Ck" id="Eeb-gK-BzO"/>
                         <outlet property="henkakuLabel" destination="WKE-7x-vfu" id="eNa-be-5nJ"/>
                         <outlet property="houiLabel" destination="RGG-nf-Dmj" id="Cov-JW-bwr"/>
                         <outlet property="hyoukouLabel" destination="9Vm-b5-Vm8" id="RXm-JP-64F"/>
                         <outlet property="idoLabel" destination="xK8-Wl-r9u" id="XwF-qC-ZbX"/>
+                        <outlet property="jihokuSeg" destination="5We-11-EUl" id="LHH-rj-mTt"/>
                         <outlet property="keidoLabel" destination="2oS-4A-k3d" id="bDB-Yz-Ztg"/>
                     </connections>
                 </viewController>

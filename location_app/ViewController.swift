@@ -23,6 +23,18 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var jihokuSeg: UISegmentedControl!
     @IBOutlet weak var compass: UIImageView!
     
+    @IBAction func goNext(_ sender:UIButton) {
+        performSegue(withIdentifier: "mapSegue", sender: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "mapSegue" {
+            let nextVC = segue.destination as! MappingViewController
+            nextVC.latitude = self.idoLabel.text!
+            nextVC.longitude = self.keidoLabel.text!
+        }
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
